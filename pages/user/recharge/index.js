@@ -82,13 +82,6 @@ Page({
       // 发起微信支付
       App.wxPayment({
         payment: result.data.payment,
-<<<<<<< HEAD
-        success: () => {
-          App.showSuccess(result.msg, function() {
-            wx.navigateBack();
-          });
-        },
-=======
         success() {
           App.showSuccess(result.msg.success, () => {
             wx.navigateBack();
@@ -97,7 +90,6 @@ Page({
         fail(res) {
           App.showError(result.msg.error);
         },
->>>>>>> 1.1.24
         complete(res) {
 
         }

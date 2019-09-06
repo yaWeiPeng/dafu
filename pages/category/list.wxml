@@ -39,37 +39,19 @@
           <navigator class="list b-f" hover-class="none" url="../goods/index?goods_id={{item.goods_id}}" wx:for="{{list.data}}" wx:key="list">
             <view class="left">
               <view class="img">
-<<<<<<< HEAD
-                <image class="goodsImg" mode="scaleToFill" src="{{item.goods_image}}"></image>
-=======
                 <image class="goodsImg" mode="scaleToFill" src="{{item.image[0].file_path}}"></image>
->>>>>>> 1.1.24
               </view>
             </view>
             <view class="right">
               <view class="cont">
                 <!-- 商品名称 -->
-<<<<<<< HEAD
-                <text class="f-24 title twolist-hidden">{{item.goods_name}}</text>
-=======
                 <text class="title f-29 twolist-hidden">{{item.goods_name}}</text>
->>>>>>> 1.1.24
                 <block wx:if="{{ showView }}">
                   <!-- 商品卖点 -->
                   <view class="selling_point onelist-hidden">
                     <text>{{ item.selling_point }}</text>
                   </view>
                   <!-- 商品销量 -->
-<<<<<<< HEAD
-                  <view class="goods_sales onelist-hidden dis-flex">
-                    <text>已售{{ item.goods_sales }}件</text>
-                  </view>
-                </block>
-                <!-- 商品价格 -->
-                <view class="price dis-flex flex-y-end">
-                  <text class="f-24 col-m">￥{{item.goods_min_price}}</text>
-                  <text class="del f-24" wx:if="{{item.goods_sku.line_price>0}}">{{item.goods_sku.line_price}}</text>
-=======
                   <view class="goods_sales dis-flex">
                     <text class="onelist-hidden">已售{{ item.goods_sales }}件</text>
                   </view>
@@ -78,7 +60,6 @@
                 <view class="detail-price onelist-hidden">
                   <text class="goods-price f-30 col-m">￥{{item.sku[0].goods_price}}</text>
                   <text class="line-price col-9 f-24" wx:if="{{item.sku[0].line_price>0}}">{{item.sku[0].line_price}}</text>
->>>>>>> 1.1.24
                 </view>
               </view>
             </view>
