@@ -1,0 +1,8 @@
+/* pages/jzxq/jzxq.wxss */
+.jzxq{width: 100%;}
+.jzxq image{display:block;width: 100%;}
+.videobox{width: 100%;position:relative;}
+.videobox video{width:700rpx;height: 400rpx;position: absolute;top: 320rpx;left: 25rpx;}
+
+
+

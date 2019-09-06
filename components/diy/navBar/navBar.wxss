@@ -1,0 +1,47 @@
+/* common.wxss */
+@import "/utils/common.wxss";
+
+/* 导航组 */
+
+.diy-navBar .data-list::after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+
+.diy-navBar .item-nav {
+  /* float: left; */
+  margin: 10px 50px;
+  text-align: center;
+  display:inline-block;
+}
+.diy-navBar .item-nav .item-image {
+  margin-bottom: 4px;
+  font-size: 0;
+}
+
+.diy-navBar .item-nav image {
+  width: 88rpx;
+  height: 88rpx;
+}
+
+/* 分列布局 */
+
+.diy-navBar .avg-sm-3 > .item-nav {
+  width: 33.33333333%;
+}
+
+.diy-navBar .avg-sm-4 > .item-nav {
+  width: 25%;
+}
+
+.diy-navBar .avg-sm-5 > .item-nav {
+  width: 20%;
+}
+
+.lbnav{width:100%;background: #f4f7fa;padding: 38rpx 0 38rpx 30rpx;overflow: hidden;height: 280rpx;box-sizing: border-box;}
+.lbnav .icon{text-align: center;display:inline-block;margin-right:60rpx;}
+.lbnav .icon image{width: 150rpx;height: 150rpx;display: block;margin: 0 auto 10rpx}
+.lbnav .icon text{font-size: 26rpx;}
+
+

@@ -1,0 +1,26 @@
+<!-- 导航组 -->
+
+<scroll-view class='lbnav' scroll-x="true" style=" white-space: nowrap; display: flex">
+    <view  class="icon" wx:for="{{ dataList }}" wx:key="this" wx:for-item="dataItem">
+      <view  catchtap="navigationTo" data-url="{{ dataItem.linkUrl }}">
+        <view>
+          <image  src="{{ dataItem.imgUrl }}"></image>
+        </view>
+        <text>{{ dataItem.text }}</text>
+      </view>
+    </view>
+</scroll-view>
+
+
+
+ <!-- <scroll-view class='lbnav' scroll-x="true" style=" white-space: nowrap; display: flex">
+    
+  <view hover-class="changestyle" class="icon"  wx:for="{{twoList}}" wx:for-item="item" 
+  
+wx:key="id" data-id="{{item.id}}" bindtap="lbnav" wx:if="{{item.id  > 0}}">
+<navigator url='../listdetail/listdetail?class={{item.id}}&title={{item.name}}' >
+    <image src='../../images/{{item.img}}'></image>
+    <text>{{item.name}}</text>
+    </navigator>
+  </view>
+</scroll-view>  -->

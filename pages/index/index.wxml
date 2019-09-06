@@ -1,0 +1,18 @@
+<view class="container b-f">
+
+  <!-- DIY组件 -->
+  <diy-component diyItems="{{ items }}">
+  
+  </diy-component>
+  <!-- 底线 -->
+  <!-- <view class="title-footer p-r">
+    <text class="f-24 col-9 cont">我是有底线的</text>
+    <view class="hr"></view>
+  </view> -->
+  <view class='jzimg'>
+<image src='https://img.alicdn.com/imgextra/i4/3499390971/O1CN01kUSqrk1J2l6YHd89i_!!3499390971.png'></image>
+<navigator url="../../pages/jzxq/jzxq"><text>点击查看</text></navigator>
+</view>
+
+</view>
+
