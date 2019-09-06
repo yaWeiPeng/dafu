@@ -18,6 +18,7 @@
                     <text>{{ dataItem.goods_name }}</text>
                   </view>
                   <view class="goods-item_desc">
+<<<<<<< HEAD
                       <!-- 商品卖点 -->
                       <view wx:if="{{ itemStyle.show.sellingPoint }}" class="desc-selling_point onelist-hidden dis-flex">
                         <text>{{ dataItem.selling_point }}</text>
@@ -26,12 +27,25 @@
                       <view wx:if="{{ itemStyle.show.goodsSales }}" class="desc-goods_sales onelist-hidden dis-flex">
                         <text>已售{{ dataItem.goods_sales }}件</text>
                       </view>
+=======
+                    <!-- 商品卖点 -->
+                    <view wx:if="{{ itemStyle.show.sellingPoint }}" class="desc-selling_point dis-flex">
+                      <text class="onelist-hidden">{{ dataItem.selling_point }}</text>
+                    </view>
+                    <!-- 商品销量 -->
+                    <view wx:if="{{ itemStyle.show.goodsSales }}" class="desc-goods_sales dis-flex">
+                      <text>已售{{ dataItem.goods_sales }}件</text>
+                    </view>
+>>>>>>> 1.1.24
                     <!-- 商品价格 -->
                     <view class="desc_footer">
                       <text wx:if="{{ itemStyle.show.goodsPrice }}" class="price_x">¥{{ dataItem.goods_price }}</text>
                       <text class="price_y col-9" wx:if="{{ itemStyle.show.linePrice && dataItem.line_price > 0 }}">¥{{ dataItem.line_price }}</text>
                     </view>
+<<<<<<< HEAD
                     
+=======
+>>>>>>> 1.1.24
                   </view>
                 </view>
               </view>
@@ -44,14 +58,23 @@
               </view>
               <view class="detail">
                 <!-- 商品标题 -->
+<<<<<<< HEAD
                 <view wx:if="{{ itemStyle.show.goodsName }}" class="goods-name f-24 twolist-hidden">
+=======
+                <view wx:if="{{ itemStyle.show.goodsName }}" class="goods-name f-30 twolist-hidden">
+>>>>>>> 1.1.24
                   {{ dataItem.goods_name }}
                 </view>
                 <!-- 商品价格 -->
                 <view class="detail-price onelist-hidden">
+<<<<<<< HEAD
                   <text wx:if="{{ itemStyle.show.goodsPrice }}" class="goods-price f-24" style='color:#ff2c2c'>￥{{ dataItem.goods_price }}</text>
                   <text wx:if="{{ itemStyle.show.linePrice && dataItem.line_price > 0 }}" class="line-price col-9 f-24">￥{{ dataItem.line_price }}</text>
                   <image src='/images/tj.png' class='tjimg'></image>
+=======
+                  <text wx:if="{{ itemStyle.show.goodsPrice }}" class="goods-price f-30 col-m">￥{{ dataItem.goods_price }}</text>
+                  <text wx:if="{{ itemStyle.show.linePrice && dataItem.line_price > 0 }}" class="line-price col-9 f-24">￥{{ dataItem.line_price }}</text>
+>>>>>>> 1.1.24
                 </view>
               </view>
             </block>
